@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nlcy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      background: #081a3a;
+      color: #fff;
+      font-family: "Roboto", "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+    }
+
+    .container {
+      width: min(90vw, 1205px);
+      display: grid;
+      grid-template-columns: 33% 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .feature-card {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.75rem;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+
+    .hero__title {
+      font-size: clamp(4.5rem, 4vw, 5.25rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      z-index: 1;
+    }
+
+    .feature-heading {
+      font-size: 2.05rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .feature-text {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.92);
+      z-index: 1;
+    }
+
+    .text-grid {
+      column-count: 2;
+      column-gap: 1.25rem;
+    }
+
+    .text-block {
+      display: block;
+      break-inside: avoid;
+      margin-bottom: 1.15rem;
+      padding: 1.25rem;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .text-block h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .text-icon {
+      display: inline-block;
+      font-size: 1.35rem;
+      line-height: 1;
+      width: 1.35rem;
+      text-align: center;
+    }
+
+    .text-block p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .gradient-text {
+      background: linear-gradient(
+          130deg,
+        #a65eea 0%,
+        #4f46e5 30px,
+        #22d3ee 60%,
+        #0d339a 100%
+    );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+      }
+
+      .text-grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" aria-labelledby="title">
+    <section class="feature-card">
+      <h1 id="title" class="hero__title gradient-text">nlcy</h1>
+      <h2 class="feature-heading">Essentie boven hype!</h2>
+      <p class="feature-text">In een wereld vol buzzwords en tijdelijke trends kiezen wij voor inhoud. Wij zoeken altijd naar de essentie van het probleem of de mogelijkheid. Wat is de echte behoefte? Wat levert waarde? Wat maakt verschil voor gebruikers en de organisatie? Door scherp te analyseren en nuchter te blijven, voorkomen we ruis en richten we ons op wat er werkelijk toe doet.</p>
+    </section>
+    <section class="text-grid" aria-label="Highlights">
+      <article class="text-block">
+        <h3><span class="text-icon gradient-text">◆</span>Hands-on</h3>
+        <p>Wij geloven dat echte vooruitgang ontstaat door te dóen. Daarom werken we liever hands-on dan vanaf de zijlijn. We sluiten aan bij teams, pakken knelpunten direct op en bouwen actief mee aan oplossingen. Geen dikke rapporten of modieuze methodes, maar praktische stappen die zichtbaar resultaat opleveren. Zo creëren we beweging waar anderen blijven praten.</p>
+      </article>
+      <article class="text-block">
+        <h3><span class="text-icon gradient-text">◆</span>Product Thinking</h3>
+        <p>Voor ons staat de gebruiker altijd centraal. Wij kijken verder dan features of technische keuzes: we focussen op de echte problemen, de waarde die geleverd moet worden en de impact op de eindgebruiker. Door product-gedreven te werken ontstaat helderheid, richting en continu inzicht in wat wérkt. Zo brengen we ideeën tot producten die mensen daadwerkelijk willen gebruiken.</p>
+      </article>
+      <article class="text-block">
+        <h3><span class="text-icon gradient-text">◆</span>IT-leiderschap</h3>
+        <p>We helpen organisaties bij het bouwen van sterke, toekomstbestendige softwaredevelopment- en operations­teams. Wij creëren structuur, duidelijkheid en eigenaarschap. Met focus op kwaliteit, samenwerking en pragmatische keuzes zorgen we dat technologie een versneller wordt en geen obstakel. </p>
+      </article>
+      <article class="text-block">
+        <h3><span class="text-icon gradient-text">◆</span>Sterk in software én producten</h3>
+        <p>Onze kracht ligt in het combineren van diepgaande software-expertise met productontwikkeling. We begrijpen zowel de technische complexiteit als de gebruikerscontext. Hierdoor slaan we moeiteloos de brug tussen strategie, ontwerp en realisatie. Het resultaat: producten die technisch robuust zijn, logisch aanvoelen en duurzaam waarde leveren.</p>
+      </article>
+      <article class="text-block">
+        <h3><span class="text-icon gradient-text">◆</span>Kennisdeling</h3>
+        <p>Diverse cursussen en workshops. Zowel individueel als voor teams en afdelingen.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
