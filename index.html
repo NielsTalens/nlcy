@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nlcy.nl | Essentie boven hypes</title>
+  <meta name="description" content="nlcy: Essentie boven hypes. Hands-on product thinking, IT-leiderschap en kennisdeling om teams te versterken en impact te maken.">
+  <meta name="author" content="nlcy1">
+  <meta name="theme-color" content="#081a3a">
+  <link rel="canonical" href="https://www.nlcy.nl/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="nlcy2">
+  <meta property="og:description" content="Essentie boven hypes. Hands-on product thinking, IT-leiderschap en kennisdeling om teams te versterken en impact te maken.">
+  <meta property="og:url" content="https://www.nlcy.nl/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="nlcy3">
+  <meta name="twitter:description" content="Essentie boven hypes. Hands-on product thinking, IT-leiderschap en kennisdeling om teams te versterken en impact te maken.">
   <title>nlcy</title>
   <style>
     :root {
@@ -18,8 +32,10 @@
     body {
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 2.5rem;
       padding: 3rem 1.5rem;
       background: #081a3a;
       color: #fff;
@@ -66,9 +82,10 @@
     }
 
     .feature-text {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       line-height: 1.6;
       color: rgba(255, 255, 255, 0.92);
+      font-style: italic;
       z-index: 1;
     }
 
@@ -124,6 +141,47 @@
       color: transparent;
     }
 
+    .footer {
+      width: min(90vw, 1205px);
+      margin-top: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.72);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.95rem;
+      letter-spacing: 0.015em;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      color: #22d3ee;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      color: #0a66c2;
+    }
+
+    .social-icon {
+      width: 1.05rem;
+      height: 1.05rem;
+      display: inline-block;
+      fill: currentColor;
+    }
+
+    .social-link:hover {
+      color: #2d8ce4;
+    }
+
     @media (max-width: 900px) {
       .container {
         grid-template-columns: 1fr;
@@ -145,7 +203,7 @@
   <main class="container" aria-labelledby="title">
     <section class="feature-card">
       <h1 id="title" class="hero__title gradient-text">nlcy</h1>
-      <h2 class="feature-heading">Essentie boven hype!</h2>
+      <h2 class="feature-heading">Essentie boven hypes!</h2>
       <p class="feature-text">In een wereld vol buzzwords en tijdelijke trends kiezen wij voor inhoud. Wij zoeken altijd naar de essentie van het probleem of de mogelijkheid. Wat is de echte behoefte? Wat levert waarde? Wat maakt verschil voor gebruikers en de organisatie? Door scherp te analyseren en nuchter te blijven, voorkomen we ruis en richten we ons op wat er werkelijk toe doet.</p>
     </section>
     <section class="text-grid" aria-label="Highlights">
@@ -171,5 +229,15 @@
       </article>
     </section>
   </main>
+  <footer class="footer" aria-label="Footer">
+    <p>
+      NLCY B.V. | KVK-nummer: 98885405 | <a href="mailto:info@nlcy.nl">info@nlcy.nl |</a>
+      <a class="social-link" href="https://www.linkedin.com/in/nielstalens/" aria-label="LinkedIn van Niels Talens">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5.16 8.63v9.72H2.2V8.63h2.96zM3.68 6.67a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zM21.8 18.35h-2.96v-5.08c0-1.21-.02-2.76-1.68-2.76-1.68 0-1.94 1.31-1.94 2.67v5.17h-2.96V8.63h2.84v1.33h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v5.35z"/>
+        </svg>
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
