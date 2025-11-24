@@ -51,7 +51,7 @@
     .container {
       width: min(90vw, 1205px);
       display: grid;
-      grid-template-columns: 33% 1fr;
+      grid-template-columns: 1fr;
       gap: 2rem;
       align-items: start;
     }
@@ -59,6 +59,7 @@
     .feature-card {
       position: relative;
       width: 100%;
+      grid-column: 1 / -1;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -96,7 +97,8 @@
     }
 
     .text-grid {
-      column-count: 2;
+      grid-column: 1 / -1;
+      column-count: 3;
       column-gap: 1.25rem;
     }
 
@@ -200,6 +202,7 @@
       }
 
       .text-grid {
+        grid-column: 1 / -1;
         column-count: 1;
       }
     }
