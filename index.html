@@ -140,6 +140,16 @@
       color: rgba(255, 255, 255, 0.9);
     }
 
+    .about {
+      grid-column: 1 / -1;
+      margin-top: 1.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.72);
+      color: #fff;
+      line-height: 1.7;
+      font-size: 1.15rem;
+    }
+
     .gradient-text {
       background: linear-gradient(
           130deg,
@@ -157,21 +167,21 @@
       width: min(90vw, 1205px);
       margin-top: 1rem;
       padding-top: 1.5rem;
-      border-top: 1px solid rgba(8, 26, 58, 0.35);
+      border-top: 1px solid rgba(255, 255, 255, 0.72);
       text-align: center;
-      color: rgba(10, 27, 63, 0.88);
+      color: rgba(255, 255, 255, 0.92);
       font-size: 1.10rem;
       letter-spacing: 0.015em;
     }
 
     .footer a {
-      color: #0a1b3f;
+      color: #fff;
       text-decoration: none;
     }
 
     .footer a:hover {
       text-decoration: underline;
-      color: #22d3ee;
+      color: #2d8ce4;
     }
 
     .social-link {
@@ -243,11 +253,15 @@
         <p>Diverse cursussen en workshops. Zowel individueel als voor teams en afdelingen.</p>
       </article>
     </section>
+    <section class="about" aria-label="Over NLCY">
+      <h3>Over NLCY</h3>
+      <p>NLCY is opgericht door Niels Talens, een hands-on product- en IT-professional met een achtergrond in softwareontwikkeling en productgedreven werken. Met een nuchtere, scherpe blik helpt NLCY organisaties om hun producten, teams en processen gericht verder te brengen met altijd met de eindgebruiker als uitgangspunt. Of het nu gaat om startups die willen opschalen of enterprises die wendbaarder willen worden, en zowel binnen IT als operations: NLCY brengt helderheid, focus en pragmatische voortgang.</p>
+    </section>
   </main>
   <footer class="footer" aria-label="Footer">
     <p>
       NLCY B.V. | KVK-nummer: 98885405 | <a href="mailto:info@nlcy.nl">info@nlcy.nl |</a>
-      <a class="social-link" href="https://www.linkedin.com/in/nielstalens/" aria-label="LinkedIn van Niels Talens">
+      <a class="social-link" href="https://www.linkedin.com/in/nielstalens/" aria-label="LinkedIn van Niels Talens" target="_blank" rel="noopener noreferrer">
         <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M5.16 8.63v9.72H2.2V8.63h2.96zM3.68 6.67a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zM21.8 18.35h-2.96v-5.08c0-1.21-.02-2.76-1.68-2.76-1.68 0-1.94 1.31-1.94 2.67v5.17h-2.96V8.63h2.84v1.33h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v5.35z"/>
         </svg>
