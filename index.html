@@ -41,7 +41,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2.5rem;
+      /* gap: 2.5rem; */
       padding: 3rem 1.5rem;
       background: #081a3a;
       color: #fff;
@@ -95,7 +95,7 @@
       font-style: italic;
       z-index: 1;
     }
-
+    /* This one is to make sure the gradient applies to a short text */
     .hero-title-wrap {
       max-width: 300px;
     }
@@ -150,6 +150,13 @@
       font-size: 1.15rem;
     }
 
+    .contact-note {
+      margin-top: 0.75rem;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: rgba(136, 164, 205, 0.92);
+    }
+
     .gradient-text {
       background: linear-gradient(
           130deg,
@@ -165,7 +172,6 @@
 
     .footer {
       width: min(90vw, 1205px);
-      margin-top: 1rem;
       padding-top: 1.5rem;
       border-top: 1px solid rgba(255, 255, 255, 0.72);
       text-align: center;
@@ -187,7 +193,7 @@
     .social-link {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.2rem;
       margin-left: 0.5rem;
       vertical-align: middle;
       color: #0a66c2;
@@ -250,20 +256,32 @@
       </article>
       <article class="text-block">
         <h3><span class="text-icon gradient-text">◆</span>Kennisdeling</h3>
-        <p>Diverse cursussen en workshops. Zowel individueel als voor teams en afdelingen.</p>
+        <p>We bieden een breed aanbod aan cursussen en workshops. Zowel individueel als voor teams en afdelingen. Dit kan in de vorm van bestaande trainingen of volledig op maat gemaakt.</p>
       </article>
     </section>
     <section class="about" aria-label="Over NLCY">
       <h3>Over NLCY</h3>
-      <p>NLCY is opgericht door Niels Talens, een hands-on product- en IT-professional met een achtergrond in softwareontwikkeling en productgedreven werken. Met een nuchtere, scherpe blik helpt NLCY organisaties om hun producten, teams en processen gericht verder te brengen met altijd met de eindgebruiker als uitgangspunt. Of het nu gaat om startups die willen opschalen of enterprises die wendbaarder willen worden, en zowel binnen IT als operations: NLCY brengt helderheid, focus en pragmatische voortgang.</p>
+      <p>NLCY is opgericht door Niels Talens, een hands-on product- en IT-professional met een achtergrond in softwareontwikkeling en productgedreven werken. Met een nuchtere, scherpe blik helpt NLCY organisaties om hun producten, teams en processen gericht verder te brengen met altijd met de eindgebruiker als uitgangspunt. Of het nu gaat om startups die willen opschalen of enterprises die wendbaarder willen worden, en zowel binnen IT als operations: NLCY brengt helderheid, focus en pragmatische voortgang.</p></br>
+      <h3>Neem contact op</h3>
+      <p>Benieuwd wat NLCY voor jullie kan betekenen?</br>
+      Mail naar <a href="mailto:info@nlcy.nl">info@nlcy.nl</a> om een vrijblijvend gesprek in te plannen.</p></br>
+      <p class="contact-note">* NLCY verwerkt geen persoonsgegevens via deze website. We gebruiken geen cookies, analytics, tracking of enige vorm van bezoekersregistratie.</p>
     </section>
   </main>
   <footer class="footer" aria-label="Footer">
     <p>
       NLCY B.V. | KVK-nummer: 98885405 | <a href="mailto:info@nlcy.nl">info@nlcy.nl |</a>
-      <a class="social-link" href="https://www.linkedin.com/in/nielstalens/" aria-label="LinkedIn van Niels Talens" target="_blank" rel="noopener noreferrer">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M5.16 8.63v9.72H2.2V8.63h2.96zM3.68 6.67a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zM21.8 18.35h-2.96v-5.08c0-1.21-.02-2.76-1.68-2.76-1.68 0-1.94 1.31-1.94 2.67v5.17h-2.96V8.63h2.84v1.33h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v5.35z"/>
+      <a class="social-link" href="https://www.linkedin.com/company/nlcy" aria-label="LinkedIn van Niels Talens" target="_blank" rel="noopener noreferrer">
+        <svg class="social-icon" viewBox="0 0 500 500" aria-hidden="true">
+        <path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+          C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+          H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+          c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+          s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+          c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+          c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+          c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+          L341.91,330.654L341.91,330.654z"/>
         </svg>
       </a>
     </p>
