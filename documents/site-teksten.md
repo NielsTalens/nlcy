@@ -23,7 +23,9 @@ Wij vinden het delen van kennis essentieel, omdat het samenwerking versterkt en 
 
 ---
 
+◆
 Projecten
+Kennisdeling
 Een voorbeeld van een aantal opdrachten die we hebben uitgevoerd:
 
 Developer Werkplek als product
